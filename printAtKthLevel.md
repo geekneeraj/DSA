@@ -1,15 +1,14 @@
-# Height of Binary Tree
+# Print nodes at kth Level
 
-In this section we will learn how to find height of binary tree in ``C++`` and ``Java``.
+
 
 ```c
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<iostream>
 #include <algorithm>
-using namespace std;
 
+using namespace std;
 
 class node{
 		public:
@@ -54,43 +53,39 @@ void printTree(node * root)
 		printTree(root->right);
 	
 	}
-
-//--------------Code to find height of Tree-----------------------------
-
-int height(node * root)
-	{
-		if(root==NULL)
-		{
-			return 0;
-		}
-		int ls=height(root->left);		
-		int rs=height(root->right);
-		return std::max(ls,rs)+1;
 	
+void printKthLevel(node * root, int k)
 
+{
+	if(root==NULL)
+	{
+		return;
 	}
-
-//------------------------------------------------
-
+	
+	if(k==1)
+	{
+		cout<<root->data<<" ";
+		return;
+	}
+	
+	printKthLevel(root->left,k-1);
+	printKthLevel(root->right,k-1);
+}
+	
 int main()
 	{
 	node* t=buildTree();
 	cout<<"printing tree"<<endl;
 	printTree(t);
-	int h=height(t);
-	std::cout<<"Height of tree= "<<h<<endl;
-	return 0;
+	cout<<endl;8 10 1 -1 -1 6 9 -1 -1 7 -1 -1 3 -1 14 13 -1 -1 -1
 	}
 
-
 ```
 
-
 ```
-Input:  8 10 1 -1 -1 6 9 -1 -1 7 -1 -1 3 -1 14 13 -1 -1 -1
+Input: 8 10 1 -1 -1 6 9 -1 -1 7 -1 -1 3 -1 14 13 -1 -1 -1
 
-Output: 8 10 1 6 9 7 3 14 13 Height of tree= 4
-
-``` 
-
-
+Output: printing tree
+        8 10 1 6 9 7 3 14 13 
+        1 6 14
+```
