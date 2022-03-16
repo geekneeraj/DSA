@@ -53,7 +53,9 @@ void printTree(node * root)
 		printTree(root->right);
 	
 	}
-	
+
+//------------code to find node at kth level--------------	
+
 void printKthLevel(node * root, int k)
 
 {
@@ -71,13 +73,14 @@ void printKthLevel(node * root, int k)
 	printKthLevel(root->left,k-1);
 	printKthLevel(root->right,k-1);
 }
-	
+
+//---------------------------------------------------------	
 int main()
 	{
 	node* t=buildTree();
 	cout<<"printing tree"<<endl;
 	printTree(t);
-	cout<<endl;8 10 1 -1 -1 6 9 -1 -1 7 -1 -1 3 -1 14 13 -1 -1 -1
+	cout<<endl;
 	}
 
 ```
