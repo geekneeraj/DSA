@@ -53,7 +53,7 @@ void printTree(node * root)
 		printTree(root->right);
 	
 	}
-	
+//--------------------code for bfs-----------------------	
 void bfs(node * root)
 	{
 		std::queue<node*> q;
@@ -77,7 +77,7 @@ void bfs(node * root)
 	return;
 
 	}
-	
+//-----------------------------------------------------------	
 int main()
 	{
 	node * t=buildTree();
