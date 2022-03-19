@@ -1,5 +1,8 @@
 # Replace Node with sum of child Node
 
+In this section we will learn how to replace node of tree with sum of its child node using  ``C++`` and ``Java``.
+
+
 ```c
 #include<stdio.h>
 #include<stdlib.h>
