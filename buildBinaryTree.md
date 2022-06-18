@@ -1,4 +1,4 @@
-# Building binary treee
+# Building binary tree
 
 In this section we will learn how to build a binary tree in ``C++`` and ``Java``.
 
