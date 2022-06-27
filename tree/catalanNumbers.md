@@ -40,7 +40,7 @@ f(n)= <sup>i=n</sup> &#8721;<sub>i=1</sub> f(i-1)*f(n-i)<br>
 * No of ways n+1 factors can be completely parenthesized for N.
 * No of Unlabelled tree can be there with n nodes.
 * No of paths with 2n steps on a rectengular grid from bottom left i.e from (n+1,0) to (0,n-1) thatdo not cross above the main diagonal.
-* No of ways to form ``Moutain Ranges`` with n upstrokes and n downstrokes that all stay above the original line. Mountain range interpretation is that will never go below horizon.
+* No of ways to form ``Mountain Ranges`` with n upstrokes and n downstrokes that all stay above the original line. Mountain range interpretation is that will never go below horizon.
 ```
 
 N=0
