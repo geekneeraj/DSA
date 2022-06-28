@@ -44,9 +44,9 @@ int main()
 }
 
 ```
-
+## DP solution of the above problem
 ```C
-DP solution
+
 
 #include<stdio.h>
 int reduceNoDP(int n)
